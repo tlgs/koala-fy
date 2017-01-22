@@ -5,11 +5,11 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     toggle = !toggle;
     if(toggle){
         chrome.tabs.executeScript(tab.id, {code: code});
-        chrome.browserAction.setIcon({path: "enabled.png"});
+        chrome.browserAction.setIcon({path: "images/enabled.png"});
     }
     else{
         chrome.tabs.executeScript(tab.id, {code: code});
-        chrome.browserAction.setIcon({path: "disabled.png"});
+        chrome.browserAction.setIcon({path: "images/disabled.png"});
   }
 });
 
